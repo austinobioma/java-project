@@ -14,7 +14,7 @@ pipeline {
         }
       stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'cd MyWebApp && mvn test'
             }
         }
       stage('Deploy to tomcat') {
