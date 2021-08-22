@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git checkout') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+      stage('Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+      stage('Test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+      stage('Deploy to tomcat') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+          
+}
