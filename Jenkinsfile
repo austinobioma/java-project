@@ -14,7 +14,7 @@ pipeline {
         }
       stage('Test') {
             steps {
-                echo 'Hello World'
+                sh 'mvn test'
             }
         }
       stage('Deploy to tomcat') {
