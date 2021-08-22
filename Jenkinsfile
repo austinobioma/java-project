@@ -9,7 +9,7 @@ pipeline {
         }
       stage('Build') {
             steps {
-               sh 'mvn clean  package'
+               sh 'cd MyWebApp && mvn clean  package'
             }
         }
       stage('Test') {
